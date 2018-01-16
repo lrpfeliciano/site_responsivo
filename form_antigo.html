@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head><title></title>
+
+	<link rel="stylesheet" 
+		  href="css/bootstrap.min.css" />	  
+
+</head>
+<body>
+	<div class="container">
+		<form name="form1"  method="post" action="seguinte.html">
+			<div class="form-group">
+				<label for="txtNome" class="col-md-2 col-xs-1">Nome:</label>
+				<input type="text" name="txtNome" value="" /> 
+			</div>
+
+			<div class="form-group">
+				<label for="txtSobreNome" class="col-md-2">Sobrenome:</label>
+				<input type="text" name="txtSobreNome" value="" />
+			</div>	
+			
+			<div class="form-group">
+				<label for="txtSenha" class="col-md-2">Senha:</label>
+				<input type="password" name="txtSenha" value="" />
+			</div>
+			
+			<div class="form-group">
+				<label for="txtCelular" class="col-md-2">Celular:</label>
+				<input type="text" name="txtCelular" value=""
+							maxlength="14" size="15"/>
+							
+			</div>
+			País: <input type="text" name="txtPais" value="" />
+			<br/>
+			Endereço: <input type="text" name="txtEndereco" value="" />
+			<br/>
+			Cep: <input type="text" name="txtCep" value="" 
+						maxlength="9"  size="10" />
+			<br/>
+			Mês de aniversário:
+			<select name="selMes">
+				<option value="01">Janeiro</option>
+				<option value="02">Fevereiro</option>
+				<option value="03">Março</option>
+				<option value="04">Abril</option>
+				<option value="05">Maio</option>
+				<option value="06">Junho</option>
+				<option value="07" selected>Julho</option>
+				<option value="08">Agosto</option>
+				<option value="09">Setembro</option>
+				<option value="10">Outubro</option>
+				<option value="11">Novembro</option>
+				<option value="12">Dezembro</option>
+			</select>
+			<br/>
+			Interesse por:
+			<select name="interesse" size="10" multiple>	
+				<option value="cinema">Cinema</option>
+				<option value="teatro">Teatro</option>
+				<option value="esportes">Esportes</option>
+				<option value="televisao">Televisão</option>
+				<option value="games">Games</option>
+				<option value="carros">Carros</option>
+			</select>
+			<br />
+			Sexo: <input type="radio" name="optSexo" />Masculino
+				  <input type="radio" name="optSexo" />Feminino 
+			<br/>	
+
+			Meios de transporte:
+			<input type="checkbox" name="chkOnibus" />Ônibus
+			<input type="checkbox" name="chkTrem" />Trem
+			<input type="checkbox" name="chkMetro" />Metrô
+			<input type="checkbox" name="chkOutro" />Outros
+			
+			<br />
+			Deixe aqui a sua mensagem:<br/>
+			<textarea name="txtMensagem" rows="10" cols="50">
+			</textarea>
+			<br />
+			
+			<input type="button" value="Clique aqui" 
+				   onclick="alert('Bem vindo!')" />
+			<input type="submit" value="Ir ao Google" />
+			<input type="reset" value="Limpar" />
+		</form>
+		
+	
+	</div>
+	
+</body>
+</html>
